@@ -1,10 +1,11 @@
 import React from "react";
-import AdvertisementList from "../pages/AdvertisementList"
+import EmployerList from "../pages/EmployerList";
+//import AdvertisementList from "../pages/AdvertisementList"
 
 export default function Dashboard() {
   return (
      
-    
-    <AdvertisementList/>
+    <EmployerList/>
+    //<AdvertisementList/>
   );
 }

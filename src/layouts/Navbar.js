@@ -10,7 +10,7 @@ export default function Navbar() {
         <Icon name="users" size="big" />
       </Menu.Item>
       <Menu.Item name="HRMS" />
-      <Menu.Item name="JobAdvertisement" />
+      <Menu.Item name="Employer List" />
     
       <Menu.Menu position="right">
           <Menu.Item>

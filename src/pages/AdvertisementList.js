@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Container, Label, Table, Header, Button } from "semantic-ui-react";
-import JobAdvertisementService from "../sevices/jobAdvertisementService";
+import JobAdvertisementService from "../services/jobAdvertisementService";
 
 export default function AdvertisementList() {
   const [jobAdvertisements, setJobAdvertisements] = useState([]);
@@ -35,7 +35,7 @@ export default function AdvertisementList() {
               <Table.Cell>
                 {" "}
                 <Button basic color="violet">
-                  Job Details
+                  View
                 </Button>
               </Table.Cell>
             </Table.Row>
