@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import { NavLink } from 'react-router-dom';
 import { Container, Table, Header, Button } from "semantic-ui-react";
 import EmployerService from "../services/employerService";
 
@@ -37,7 +38,9 @@ export default function EmployerList() {
                 <Table.Cell>{employer.phoneNumber}</Table.Cell>
                 <Table.Cell>
                   {" "}
-                  <Button basic color="violet">
+                  <Button basic color="violet" 
+                  as={NavLink} to="/employers/view"
+                  >
                     View
                   </Button>
                 </Table.Cell>

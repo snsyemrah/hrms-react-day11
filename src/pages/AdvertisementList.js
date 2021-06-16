@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import { Container, Label, Table, Header, Button } from "semantic-ui-react";
 import JobAdvertisementService from "../services/jobAdvertisementService";
 
@@ -34,8 +35,8 @@ export default function AdvertisementList() {
               <Table.Cell>{jobAdvertisement.deadline}</Table.Cell>
               <Table.Cell>
                 {" "}
-                <Button basic color="violet">
-                  View
+                <Button basic color="violet" as={NavLink} to="/advertisements-view">
+                  View 
                 </Button>
               </Table.Cell>
             </Table.Row>
